@@ -1,0 +1,78 @@
+﻿<Window x:Class="WPFDizain.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDizain"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas x:Name="roomCanvas" Background="Beige" Width="600" MouseLeftButtonDown="roomCanvas_MouseLeftButtonDown" Margin="100,10,100,17" RenderTransformOrigin="0.492,0.496">
+            <Path Fill="LightBlue" Stroke="BlueViolet" StrokeThickness="8" HorizontalAlignment="Left" Canvas.Left="-1" VerticalAlignment="Center" Canvas.Top="1.25">
+                <Path.Data>
+                    <RectangleGeometry Rect="98,75,200,150"></RectangleGeometry>
+                </Path.Data>
+            </Path>
+            <Path Fill="LightGreen" Stroke="BlueViolet" StrokeThickness="6" HorizontalAlignment="Left" Canvas.Left="-1.5" VerticalAlignment="Center">
+                <Path.Data>
+                    <RectangleGeometry Rect="300,100,200,150"></RectangleGeometry>
+                </Path.Data>
+            </Path>
+            <Path Stroke="LightGreen" StrokeThickness="9" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="1.25" Canvas.Left="-1.5">
+                <Path.Data>
+                    <LineGeometry StartPoint ="299,145" EndPoint="299,205"></LineGeometry>
+                </Path.Data>
+            </Path>
+            <Path Stroke="LightGreen" StrokeThickness="8" HorizontalAlignment="Left" Canvas.Left="-2.5" VerticalAlignment="Center">
+                <Path.Data>
+                    <LineGeometry StartPoint ="500,170" EndPoint="500,230"></LineGeometry>
+                </Path.Data>
+            </Path>
+            <Path Fill="Aquamarine" Stroke="BlueViolet" StrokeThickness="6" HorizontalAlignment="Left" Canvas.Left="-2" VerticalAlignment="Center">
+                <Path.Data>
+                    <RectangleGeometry Rect="300,250,200,150"></RectangleGeometry>
+                </Path.Data>
+            </Path>
+            <Path Fill="Coral" Stroke="BlueViolet" StrokeThickness="6" HorizontalAlignment="Center" Canvas.Left="-0.5" VerticalAlignment="Center">
+                <Path.Data>
+                    <RectangleGeometry Rect="98,225,200,175"></RectangleGeometry>
+                </Path.Data>
+            </Path>
+            <Path Stroke="LightGreen" StrokeThickness="9" Canvas.Left="-0.5" Canvas.Top="158" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Path.Data>
+                    <LineGeometry StartPoint ="299,145" EndPoint="299,205"></LineGeometry>
+                </Path.Data>
+            </Path>
+            <Path Stroke="LightGreen" StrokeThickness="8" Canvas.Left="170.219" Canvas.Top="295.854" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90.387"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Data>
+                    <LineGeometry StartPoint ="299,145" EndPoint="299,205"></LineGeometry>
+                </Path.Data>
+            </Path>
+
+            <TextBlock FontWeight="Bold" Canvas.Left="151" Canvas.Top="158">
+            <Run>Кухня </Run>
+            <Run> (18 m2)</Run>
+            </TextBlock>
+            <TextBlock FontWeight="Bold" Canvas.Left="151" Canvas.Top="307">
+            <Run>Зал </Run>
+            <Run> (34 m2)</Run>
+            </TextBlock>
+            <TextBlock FontWeight="Bold" Canvas.Left="350" Canvas.Top="163">
+             <Run>Коридор </Run>
+             <Run> (20 m2)</Run>
+            </TextBlock>
+            <TextBlock FontWeight="Bold" Canvas.Left="350" Canvas.Top="312">
+              <Run> Спальня </Run>
+              <Run> (23 m2)</Run>
+            </TextBlock>
+        </Canvas>
+    </Grid>
+</Window>
